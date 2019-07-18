@@ -7,9 +7,13 @@ export default class CambioStore extends React.Component {
   render() {
     return (
       <div className="content">
-        <div >
-          <Simulator />
-          <Comments />
+        <div className="content__flexcontainer">
+          <div className="flexcontainer--left">
+            <Simulator />
+          </div>
+          <div className="flexcontainer--right">
+            <Comments />
+          </div>
         </div>
       </div>
     );

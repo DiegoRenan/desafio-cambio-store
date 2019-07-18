@@ -5,6 +5,13 @@
   background-image: linear-gradient($position, $secondary, transparent);
 }
 
+@mixin flex-position($direction, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $align;
+  flex-wrap: $wrap;
+}
+
 body {
   @include linear-gradient(to bottom, $blue-dark, $black-light);
   margin: 0;
@@ -18,24 +25,29 @@ body {
 
 .content__flexcontainer {
   width: 100%;
-  display: flex;
+  padding-top: 10vh;
+  height: 100vh;
+  @include flex-position(row, space-around, wrap);
 }
 
 .flexcontainer--right {
-  width: 100%;
-}
-
-.flexcontainer--right__comments {
-  width: 100%;
+  width: 50%;
+  @include flex-position(row, center, wrap);
 }
 
 .flexcontainer--left {
-  width: 100%;
+  width: 50%;
+  @include flex-position(row, center, wrap);
+}
+
+.flexcontainer--right__comments {
+  width: 80%;
 }
 
 .flexcontainer--left__simulator {
-  width: 100%;
+  width: 70%;
   height: 412px;
+  padding: 10px;
   background-color: $white-meddium;
 }
 
