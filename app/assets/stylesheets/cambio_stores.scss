@@ -1,3 +1,42 @@
-// Place all the styles related to the CambioStores controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'colors';
+
+@mixin linear-gradient($position, $primary, $secondary) {
+  background-color: $primary;
+  background-image: linear-gradient($position, $secondary, transparent);
+}
+
+body {
+  @include linear-gradient(to bottom, $blue-dark, $black-light);
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content__flexcontainer {
+  width: 100%;
+  display: flex;
+}
+
+.flexcontainer--right {
+  width: 100%;
+}
+
+.flexcontainer--right__comments {
+  width: 100%;
+}
+
+.flexcontainer--left {
+  width: 100%;
+}
+
+.flexcontainer--left__simulator {
+  width: 100%;
+  height: 412px;
+  background-color: $white-meddium;
+}
+
+
