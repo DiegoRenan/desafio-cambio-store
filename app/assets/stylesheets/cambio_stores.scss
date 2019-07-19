@@ -1,8 +1,8 @@
 @import 'colors';
 
 @mixin linear-gradient($position, $primary, $secondary) {
-  background-color: $primary;
-  background-image: linear-gradient($position, $secondary, transparent);
+  background-color: $primary !important;
+  background-image: linear-gradient($position, $secondary, transparent) !important;
 }
 
 @mixin flex-position($direction, $align, $wrap) {
@@ -13,7 +13,7 @@
 }
 
 body {
-  @include linear-gradient(to bottom, $blue-dark, $black-light);
+  @include linear-gradient(to bottom, $blue-dark, $black-light) ;
   margin: 0;
   padding: 0;
 }
@@ -25,29 +25,31 @@ body {
 
 .content__flexcontainer {
   width: 100%;
-  padding-top: 70px;
+  padding-top: 100px;
   height: 100vh;
   @include flex-position(row, space-around, wrap);
 }
 
 .flexcontainer--right {
   width: 50%;
-  @include flex-position(row, center, wrap);
+  @include flex-position(row, right, wrap);
 }
 
 .flexcontainer--left {
   width: 50%;
-  @include flex-position(row, center, wrap);
+  @include flex-position(row, left, wrap);
 }
 
 .flexcontainer--right__comments {
-  width: 80%;
+  width: 100%;
+  color: $white-meddium;
 }
 
 .flexcontainer--left__simulator {
-  width: 72%;
+  width: 75%;
   height: 24rem;
-  padding: 10px;
+  margin-left: 10px;
+  padding: 5px;
   background-color: $white-meddium;
   border-radius: 20px;
   justify-content: center;

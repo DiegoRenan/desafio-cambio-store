@@ -1,0 +1,11 @@
+@import "bootstrap";
+
+.carousel {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.carousel-inner {
+  width: 70% !important;
+  border-radius: 20px !important;
+}
