@@ -1,0 +1,47 @@
+@import 'colors';
+
+%select {
+  height: 56px;
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+}
+
+.select-default {
+  @extend %select;
+  color: $grey-dark;
+  background-color: $grey-light;
+}
+
+%button {
+  height: 64px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: $white-meddium;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.button-default {
+  @extend %button;
+  background-color: $orange;
+}
+
+.button-default--margin-20 {
+  margin-top: .7rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.padding-left-5 {
+  padding-left: 5px;
+}

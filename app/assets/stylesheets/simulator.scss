@@ -1,0 +1,41 @@
+@import 'colors';
+
+@mixin grid-position($columns...) {
+  display: grid;
+  grid-template-columns: $columns;
+}
+
+.simulator-header{
+  height: 28px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  color: $orange; 
+}
+
+.simulator-body {
+  margin-top: 5px;
+  padding: 20px;
+  color: $grey-dark;
+}
+
+.simulator-body__money {
+  color: $green-light;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.simulator-body__coin {
+  font-size: 1.5rem;
+}
+
+.simulator-body__title {
+  text-align: center;
+}
+
+.simulator-body__form {
+  @include grid-position(10% 85% 5%);
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
