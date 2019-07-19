@@ -1,6 +1,5 @@
 {
   "scripts": { 
-    "postinstall": "yarn install",
     "lint": "(yarn run --silent lint)",
     "build:clean": "rm app/assets/webpack/*",
     "build:production": "(yarn run --silent build:production)",
