@@ -1,7 +1,9 @@
 {
   "scripts": { "postinstall": "cd client && npm install" },
+  "engines": {
+    "node": "11.13.0"
+  },
   "name": "cambio-store",
-  "version": "11.13.0",
   "private": true,
   "dependencies": {
     "@babel/preset-react": "^7.0.0",
