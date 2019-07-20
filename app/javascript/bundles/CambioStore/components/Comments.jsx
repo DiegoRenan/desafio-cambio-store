@@ -5,6 +5,7 @@ import Slider from '../templates/Slider'
 export default class Comments extends React.Component {
   
   render() {
+    
     return (
       <div className="flexcontainer--right__comments">
         <h1>Compare e compre online nas principais Casas de Câmbio do país.</h1>

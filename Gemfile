@@ -12,17 +12,19 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'                # https://github.com/turbolinks/turbolinks
 gem 'jbuilder', '~> 2.5'                # https://github.com/rails/jbuilder
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'rack-cors'
 
 gem 'bootstrap', '~> 4.3.1'            # https://github.com/twbs/bootstrap-rubygem
 gem 'jquery-rails'
 gem 'react_on_rails', '11.1.4'          #https://github.com/shakacode/react_on_rails
-
+gem 'rest-client'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'

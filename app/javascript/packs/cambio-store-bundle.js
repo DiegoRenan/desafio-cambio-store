@@ -6,5 +6,5 @@ import Comments from '../bundles/CambioStore/components/Comments';
 ReactOnRails.register({
   CambioStore,
   Simulator,
-  Comments,
+  Comments
 });

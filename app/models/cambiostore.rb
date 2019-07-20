@@ -1,0 +1,2 @@
+class CambioStore < ApplicationRecord
+end
