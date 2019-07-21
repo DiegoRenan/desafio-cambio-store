@@ -27,7 +27,7 @@ body {
 
 .content__flexcontainer {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 150px;
   height: 100vh;
   @include flex-position(row, space-around, wrap);
 }

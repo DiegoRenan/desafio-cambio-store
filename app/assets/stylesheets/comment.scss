@@ -1,0 +1,39 @@
+@mixin grid-position($columns...) {
+  display: grid;
+  grid-template-columns: $columns;
+}
+
+@mixin flex-position($direction, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $align;
+  flex-wrap: $wrap;
+}
+
+.comment-footer {
+  margin-top: 20px;
+  font-size: .95rem;
+}
+
+.comment-footer__images {
+  @include flex-position(row, space-around , wrap);
+  text-align: top;
+  align-items: center;
+}
+
+.comment-footer__text {
+  @include grid-position(33% 33% 33%);
+  text-align: center;
+  align-items: center;
+}
+
+.span-1 {
+  font-weight: bolder;
+  font-size: 1.4rem;
+  line-height: 10px;
+}
+
+.span-2 {
+  font-weight: bold;
+  line-height: 10px;
+}
