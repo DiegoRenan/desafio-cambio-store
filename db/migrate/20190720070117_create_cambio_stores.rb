@@ -1,6 +1,6 @@
 class CreateCambioStores < ActiveRecord::Migration[5.2]
   def change
-    create_table :cambiostores do |t|
+    create_table :cambio_stores do |t|
       t.string :moeda
 
       t.timestamps
