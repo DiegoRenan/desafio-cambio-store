@@ -5,9 +5,8 @@ default: &default
   host: localhost
 
 development:
-  adapter: sqlite3
-  host: localhost
-  database: db/development.sqlite3
+  <<: *default
+  database: ror_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,4 +17,4 @@ test:
 
 production:
   <<: *default
-  database: cambiostore_production
+  database: ror_production

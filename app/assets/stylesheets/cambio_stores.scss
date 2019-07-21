@@ -16,7 +16,8 @@ body {
   @include linear-gradient(to bottom, $blue-dark, $black-light) ;
   margin: 0;
   padding: 0;
-  font-family: Raleway;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .content {
@@ -42,8 +43,8 @@ body {
 }
 
 .flexcontainer--right__comments {
-  width: 100%;
   color: $white-meddium;
+  margin-left: 15px;
 }
 
 .flexcontainer--left__simulator {
